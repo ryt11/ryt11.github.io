@@ -6,23 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href='assets/stylesheets/main.css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type='text/javascript' src='js/navbar.js'></script>
 </head>
 <body>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Riley T</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li id="home-nav"><a href="#">Home</a></li>
+        <li id="port-nav"><a href="#">Portfolio</a></li>
+        <li id="contact-nav"><a href="#">Contact Me</a></li>
       </ul>
     </div>
   </nav>
+
+  <div  class="portfolio-bar hard-separate">
+    <div class="portfolio-text">
+        - About Me -
+    </div>
+  </div>
 
 
     <div class="about-me">
@@ -40,14 +49,75 @@
       </div>
     </div>
 
-    <div class="portfolio-bar">
+    <div id="portf-sect" class="portfolio-bar">
       <div class="portfolio-text">
-          - Portfolio - 
+          - Portfolio -
+      </div>
+    </div>
+    <div class ="row port-row-1">
+      <div class="portfolio-descrip col-sm-4">
+        <a href="http://codepen.io/ryt11/full/ezgbGB/">Random Quote Machine </a>
+      </div>
+      <div class="portfolio-descrip col-sm-4">
+      <a href="#">Project 2</a>
+      </div>
+      <div class="portfolio-descrip col-sm-4">
+       <a href="#">Project 3</a>
+      </div>
+
+    </div>
+
+    <div class ="row port-row-2">
+      <div class="col-sm-4">
+        <a href="http://codepen.io/ryt11/full/ezgbGB/">
+        <img class ="portfolio-pic"src="assets/gifs/quotegif.gif" alt="" />
+      </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="#">
+       <img class ="portfolio-pic"src="https://media.giphy.com/media/3o85xkn7UDzLuuUJb2/giphy.gif" alt="" />
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="#">
+       <img class ="portfolio-pic"src="https://media.giphy.com/media/3o85xkn7UDzLuuUJb2/giphy.gif" alt="" />
+       </a>
+      </div>
+
+    </div>
+
+    <div class="portfolio-bar">
+      <div id="contact-sect" class="portfolio-text separate">
+          - Contact Me -
       </div>
     </div>
 
+    <form class="form-horizontal form-format">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-2">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="name">Name:</label>
+    <div class="col-sm-2">
+      <input type="name" class="form-control" id="name" placeholder="Enter Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="message">Message:</label>
+    <div class="col-sm-6">
+      <input type="message" class="form-control" id="msg" placeholder="Enter Message">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
 
-  <div class='footer'>
 
     <div class="row">
       <div class="col-sm-4">
@@ -57,22 +127,18 @@
       </div>
       <div class="col-sm-4">
         <a href="https://www.linkedin.com/in/d-r-thompson/">
-           <button type = 'button' class = "btn social-buttons" id = "linkedin-button"><icon class = 'fa fa-linkedin'</icon>
+           <button type = 'button' class = "btn social-buttons btn-custom" id = "linkedin-button"><icon class = 'fa fa-linkedin'</icon>
          </a>
       </div>
       <div class="col-sm-4">
         <a href="https://github.com/ryt11">
-           <button type = 'button' class = "btn social-buttons" id = "github-button"><icon class = 'fa fa-github'</icon>
+           <button type = 'button' class = "btn social-buttons btn-custom" id = "github-button"><icon class = 'fa fa-github'</icon>
          </a>
-
-
       </div>
   </div>
 
 
 
-
-  </div>
 
 
 </body>
